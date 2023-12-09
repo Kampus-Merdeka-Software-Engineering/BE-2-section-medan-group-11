@@ -20,7 +20,7 @@ const Booking = db.define('booking', {
     freezeTableName: false
 });
 
-export default Booking;
+export {Booking};
 
 (async()=>{
     await db.sync();
