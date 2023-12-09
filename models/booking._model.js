@@ -9,7 +9,7 @@ const Booking = db.define('booking', {
         primaryKey: true,
         autoIncrement: true
     },
-    name: DataTypes.STRING,
+    nama: DataTypes.STRING,
     email: DataTypes.STRING,
     telp: DataTypes.STRING,
     tgl_pesan: DataTypes.DATE,
@@ -17,7 +17,7 @@ const Booking = db.define('booking', {
     jumlah: DataTypes.STRING,
     tipe: DataTypes.STRING
 }, {
-    freezeTableName: true
+    freezeTableName: false
 });
 
 export default Booking;

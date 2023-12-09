@@ -5,4 +5,4 @@ const db = new Sequelize('onlykost','root','',{
     dialect:'mysql'
 });
 
-export default db;
+export default db;
