@@ -3,7 +3,7 @@ import db from "../config/db.js";
 
 const {DataTypes} = Sequelize;
 
-const Booking = db.define('bookings2', {
+const Booking = db.define('bookings2s', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
