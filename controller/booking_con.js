@@ -13,8 +13,8 @@ export const createBooking = async(req,res) => {
 
 export const getBooking = async(req,res) => {
     try{
-        const bookings2s = await Booking.findAll();
-        res.status(200).json(bookings2s);
+        const bookings = await Booking.findAll();
+        res.status(200).json(bookings);
     }catch(error){
       console.log(error.message);
       res.status(500).json({ error: "Internal server error" });
