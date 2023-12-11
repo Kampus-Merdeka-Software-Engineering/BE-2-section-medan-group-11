@@ -2,6 +2,7 @@ import {Booking} from "../models/booking._model.js";
 
 export const createBooking = async(req,res) => {
     try {
+        console.log(req.body)
         await Booking.create(req.body);
         res.status(201).json({message: "Data Anda Sudah Kami Terima"});
     } catch (error) {

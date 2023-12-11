@@ -23,5 +23,5 @@ const Booking = db.define('booking', {
 export {Booking};
 
 (async()=>{
-    await db.sync();
+    await db.sync({ alter: true });
 })();
