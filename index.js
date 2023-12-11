@@ -8,5 +8,5 @@ app.use(cors());
 app.use(express.json());
 app.use(booking_route);
 app.listen(port, () => {
-    console.log('Example app listening on http://localhost:${port}');
+    console.log('Example app listening on https://kind-jade-wasp-wig.cyclic.app/');
 });
